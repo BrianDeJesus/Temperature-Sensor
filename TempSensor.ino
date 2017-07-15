@@ -13,7 +13,7 @@ void setup() {
 }
 
 void loop() {
- int tempSense = analogRead(A0);
+ int tempSense = analogRead(tempSensorPin);
  static float prevTemp;
  lcd.setCursor(0,0);
  float temperature = getTempConversion(tempSense);
